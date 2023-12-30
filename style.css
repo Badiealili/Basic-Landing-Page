@@ -3,10 +3,10 @@
 :root {
     --clr-bg-dark: #1f2937;
     --clr-btn: #3882f6;
-    --text-hero-main:#f9faf8;
-    --text-hero-secondary: #e5e7eb;
-    --text-features-main: #1f2937;
-    --text-quote: #1f2937;
+    --text-light-main:#f9faf8;
+    --text-light-secondary: #e5e7eb;
+    --text-dark-main: #1f2937;
+    --text-dark-secondary: #384455;
 }
 
 *,
@@ -50,7 +50,7 @@ header {
 
 .navigation-link {
     text-decoration: none;
-    color: var(--text-hero-secondary);
+    color: var(--text-light-secondary);
 }
 
 /* Hero section styling */
@@ -82,15 +82,15 @@ header {
 } */
 
 .hero-content h1 {
-    color: var(--text-hero-main);
+    color: var(--text-light-main);
     font-size: 48px;
-    font-weight: 1000;
+    font-weight: 900;
     line-height: 1;
     margin-bottom: 8px;
 }
 
 .hero-content p {
-    color: var(--text-hero-secondary);
+    color: var(--text-light-secondary);
     font-size: 18px;
     margin-bottom: 24px;
     max-width: 80%;
@@ -101,8 +101,50 @@ header {
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
-    color: var(--text-hero-secondary);
+    color: var(--text-light-secondary);
     background: var(--clr-btn);
     padding: 8px 16px;
     border-radius: 8px;
+}
+
+/* Features section styling */
+
+.features {
+    padding: 3em 10em;
+}
+
+.features h1 {
+    color: var(--text-dark-main);
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.features .features-container {
+    display: flex;
+    gap: 2em;
+    padding-inline: 5em;
+}
+
+.features .features-container .features-element {
+    background-color: lightblue;
+    border-radius: 3em;
+    border: 2px dotted var(--clr-btn);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.features .features-container img {
+    width: 40%;
+    filter: invert(47%) sepia(68%) saturate(3512%) hue-rotate(201deg) brightness(98%) contrast(96%);
+}
+
+.features .features-container p {
+    text-align: center;
+    color: var(--text-dark-secondary);
 }
