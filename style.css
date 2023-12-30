@@ -157,7 +157,7 @@ header {
 /* Quote section styling */
 
 .quote {
-    padding-block: 6em 8em;
+    padding-block: 8em 6em;
     padding-inline: 15em;
     background-color: var(--clr-bg-light);
 }
@@ -177,4 +177,39 @@ header {
 .quote-author {
     font-weight: 500;
     text-align: right;
+}
+
+/* CTA section styling */
+
+.cta {
+    padding-block: 6em;
+}
+
+.cta-container {
+    padding: 3em 7em;
+    background: var(--clr-btn);
+    border-radius: 1em;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.cta-text .title {
+    font-size: 18px;
+    color: var(--text-light-main);
+    font-weight: 600;
+}
+
+.cta-text p {
+    color: var(--text-light-secondary);
+}
+
+.cta-button button {
+    border: 2px solid var(--text-light-secondary);
+    color: var(--text-light-secondary);
+    font-size: 16px;
+    font-weight: 600;
+    background-color: transparent;
+    padding: 8px 16px;
+    border-radius: 8px;
 }
