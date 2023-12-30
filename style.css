@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --clr-dark-blue: #1f2937;
-    --clr-light-gray: #e5e7eb;
+    --clr-bg-dark: #1f2937;
+    --clr-btn: #3882f6;
+    --text-hero-main:#f9faf8;
+    --text-hero-secondary: #e5e7eb;
+    --text-features-main: #1f2937;
+    --text-quote: #1f2937;
 }
 
 *,
@@ -18,11 +22,13 @@ html, body {
     font-family: 'Inter', sans-serif;
 }
 
+/* Header styling */
+
 header {
     padding: 1em 10em;
     display: flex;
     align-items: center;
-    background: var(--clr-dark-blue);
+    background: var(--clr-bg-dark);
 }
 
 .logo img {
@@ -44,5 +50,59 @@ header {
 
 .navigation-link {
     text-decoration: none;
-    color: var(--clr-light-gray)
+    color: var(--text-hero-secondary);
+}
+
+/* Hero section styling */
+
+.hero {
+    background: var(--clr-bg-dark);
+    padding: 3em 10em;
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.hero > * {
+    flex: 1;
+}
+
+.hero-img {
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.hero-img img {
+    max-width: 100%;
+}
+
+/* .hero-content {
+    display: flex;
+    flex-direction: column;
+} */
+
+.hero-content h1 {
+    color: var(--text-hero-main);
+    font-size: 48px;
+    font-weight: 1000;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.hero-content p {
+    color: var(--text-hero-secondary);
+    font-size: 18px;
+    margin-bottom: 24px;
+    max-width: 80%;
+}
+
+.hero-content button {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-hero-secondary);
+    background: var(--clr-btn);
+    padding: 8px 16px;
+    border-radius: 8px;
 }
