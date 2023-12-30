@@ -128,15 +128,19 @@ header {
 
 .features .features-container {
     display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     gap: 2em;
-    padding-inline: 5em;
 }
 
 .features .features-container .features-element {
     background-color: lightblue;
+    width: calc(25% - 2em);
+    min-width: 200px;
     border-radius: 3em;
     border: 2px dotted var(--clr-btn);
     padding: 2em;
+    flex: 0 1 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
