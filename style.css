@@ -2,6 +2,7 @@
 
 :root {
     --clr-bg-dark: #1f2937;
+    --clr-bg-light: #e5e7eb;
     --clr-btn: #3882f6;
     --text-light-main:#f9faf8;
     --text-light-secondary: #e5e7eb;
@@ -22,10 +23,14 @@ html, body {
     font-family: 'Inter', sans-serif;
 }
 
+section, header {
+    padding-inline: 12em;
+}
+
 /* Header styling */
 
 header {
-    padding: 1em 10em;
+    padding-block: 1em;
     display: flex;
     align-items: center;
     background: var(--clr-bg-dark);
@@ -57,7 +62,7 @@ header {
 
 .hero {
     background: var(--clr-bg-dark);
-    padding: 3em 10em;
+    padding-block: 3em;
     display: flex;
     align-items: center;
     gap: 3em;
@@ -110,7 +115,7 @@ header {
 /* Features section styling */
 
 .features {
-    padding: 3em 10em;
+    padding-block: 4em 6em;
 }
 
 .features h1 {
@@ -147,4 +152,29 @@ header {
 .features .features-container p {
     text-align: center;
     color: var(--text-dark-secondary);
+}
+
+/* Quote section styling */
+
+.quote {
+    padding-block: 6em 8em;
+    padding-inline: 15em;
+    background-color: var(--clr-bg-light);
+}
+
+.quote-container {
+    width: fit-content;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 200;
+    /* font: italic 200 36px; */
+    margin-bottom: 1em;
+}
+
+.quote-author {
+    font-weight: 500;
+    text-align: right;
 }
