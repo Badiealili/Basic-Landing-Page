@@ -190,7 +190,9 @@ header {
     background: var(--clr-btn);
     border-radius: 1em;
     display: flex;
+    flex-wrap: wrap;
     align-items: end;
+    gap: 2em;
     justify-content: space-between;
 }
 
